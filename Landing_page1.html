@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <title>Samosa</title>
+    <style>
+         @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Roboto&display=swap');
+        body{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+            text-decoration: none;
+            font-family: sans-serif;
+            background-color:khaki;
+        }
+       header{
+            position:fixed;
+            top:0;
+            left:0;
+            width:100%;
+            display:flex;
+            justify-content: space-between;
+            box-shadow: 0 0.5rem 1rem rgba(0,0,0,.1);
+            padding:.9rem 0;
+            background-color:white;
+        }
+
+        header .logo_name{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            padding-left: 200px;
+        }
+
+        header .logo_name img{
+            width:90px;
+            margin: 0;
+            padding: 0;
+        }
+
+        header .logo_name a{
+            text-decoration: none;
+            font-size: 1.9rem;
+            color: black;
+            font-weight: 700;
+            cursor: pointer;
+            font-family:'Roboto', sans-serif;
+        }
+
+        header nav{
+            padding-top:15px;
+            padding-right: 200px;
+        }
+
+        header nav a{
+            padding-left:25px;
+            text-decoration: none;
+            text-transform:uppercase;
+            font-size: 1rem;
+            color:black;
+            font-weight: normal;
+        }
+
+        header nav button{
+           margin-bottom:10px;  
+           margin-left: 30px;
+           border-radius:20px;
+           padding:5px 27px;
+           border: 2px solid rgb(69, 69, 69);
+           background-color: #fff;
+           font-weight:600;
+           color:rgb(69, 69, 69);
+        }
+
+
+        .first{
+            background:url(img/pexels-satyam-verma-4449068.jpg) no-repeat;
+            height:100vh;
+            background-size:cover;
+            background-position:center center;
+        }
+
+        .first .container{
+            /* position: absolute;
+            top:120px; */
+            color:white;
+            padding-left: 900px;
+            padding-top: 350px;
+        }
+        .first .container h1{
+            padding: 0;
+            margin: 0;
+            font-size: 140px;
+        }
+
+        .first .container h2{
+            padding: 0;
+            margin: 0;
+            font-size: 100px;
+        }
+
+        .first .container p{
+            padding: 0;
+            margin: 0;
+            font-size: 30px;
+        }
+
+        
+        .second{
+            width:100%;
+            height: 57vh;
+            /* background-color: rgb(230, 226, 226); */
+            background-color: black;
+            margin:90px 0;
+            display:grid;
+            justify-content: center;
+            /* margin-bottom: 100px; */
+            color:khaki;
+        }
+
+     .second .intro{
+         width:900px;
+         margin:18px 0;
+         text-align: center;
+     }
+
+     .second .intro .large-text{
+        font-size: 30px;
+        font-weight:bolder;
+        margin-bottom: 15px;
+     }
+
+     .second .intro .small-text{
+        line-height: 1.5rem;
+     }
+
+     .large{
+        position:relative;
+         bottom:380px;
+         transform: rotate(-30deg);
+         right:300px;
+     }
+
+     .small{
+        position:relative;
+         bottom:330px;
+         left:890px;
+         transform: rotate(20deg);
+     }
+     
+     
+
+
+     .third{
+    width:900px;
+    margin: 60px auto;
+}
+
+.third .head{
+    font-size: 30px;
+    font-weight:bolder;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.third .sub-container{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:20px;
+    padding: 20px;
+}
+
+.third .sub-container .box{
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1);
+    text-align: center;
+    background-color: rgb(245, 240, 240);
+    border-radius: 5px;
+}
+
+.third .sub-container .box:hover{
+       border-left: 4px solid rgb(19, 19, 19);
+       border-bottom: 4px solid rgb(21, 20, 20);
+       
+}
+
+.third .sub-container .box p{
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+
+
+.fourth{
+    background-color: black;
+    color:white;
+}
+
+.fourth .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.fourth .head{
+    font-size: 30px;
+    font-weight:bolder;
+    margin-bottom: 15px;
+    text-align: center;
+    padding: 20px;
+}
+
+.fourth .container form{
+    padding: 20px;
+    width:450px;
+    display:flex;
+    flex-direction: column;
+    padding-left:80px;
+}
+
+.fourth .container form input{
+    margin-bottom: 8px;
+    height: 26px;
+
+}
+
+.fourth .container form label{
+    font-size: 20px;
+    color: khaki;
+}
+
+.fourth .container .contacts{
+    padding-right: 100px;
+}
+
+.fourth .container .contacts p:nth-child(1){
+    font-size: 30px;
+    margin: 0;
+    padding: 0;
+}
+.fourth .container .contacts p:nth-child(2), .fourth .container .contacts p:nth-child(4){
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 18px;
+    color: khaki;
+}
+
+.fourth .container .contacts p:nth-child(3){
+    font-size: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.fourth .container .contacts p:nth-child(5), .fourth .container .contacts p:nth-child(6){
+    font-size: 18px;
+}
+
+.fourth .container .contacts p:nth-child(7){
+    font-size: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.fourth .container .contacts p:nth-child(8) a{
+text-decoration: none;
+color:khaki;
+margin-left: 6px;
+font-size: 18px;
+}
+
+    </style>
+</head>
+<body>
+    <div class="first">
+    <header>
+        <div class="logo_name">
+            <img src="img/samosa.png" alt="">
+            <a href="#">Samosa</a>
+        </div>
+
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Product</a>
+            <a href="#">about us</a>
+            <a href="#">contacts</a>
+            <button>Buttons</button>
+        </nav>
+    </header>
+    <div class="container">
+        <h1>Craving</h1>
+        <h2>for Samosa</h2>
+        <p>Spicy &middot; Crispy &middot; Sweet</p>
+        <p>We have all you want</p>
+    </div>
+</div>
+
+
+    <!-- <section class="first">
+        <div class="container">
+            <h1>Craving</h1>
+            <h2>for Samosa</h2>
+            <p>Spicy &middot; Crispy &middot; Sweet</p>
+            <p>We have all you want</p>
+        </div>
+    </section> -->
+
+    
+
+    <section class="second">
+        <div class="intro">
+            <p class="large-text">&middot; About Us &middot;</p>
+            <p class="small-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit tempora aut deleniti unde reiciendis, placeat, veniam repudiandae doloremque quibusdam dolor, cum obcaecati?Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem perferendis soluta deserunt provident hic consequatur, modi esse possimus vero reiciendis.Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem perferendis soluta deserunt provident hic consequatur, modi esse possimus vero reiciendis.Exercitationem perferendis soluta deserunt provident hic consequatur, modi esse possimus vero reiciendis.Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem perferendis soluta deserunt provident hic consequatur, modi esse possimus vero reiciendis.Exercitationem perferendis soluta deserunt provident hic consequatur, modi esse possimus vero reiciendis.Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem perferendis soluta deserunt provident hic consequatur, modi esse possimus vero reiciendis.Exercitationem perferendis soluta deserunt provident hic consequatur, modi esse possimus vero reiciendis.Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem perferendis soluta deserunt provident hic consequatur, modi esse possimus vero reiciendis.</p>
+           
+        </div>
+        <img src="IMG/samosa.png" alt="" class="large">
+    <img src="IMG/samosa.png" alt="" class="small">
+    </section>
+
+    <section class="third">
+        <p class="head">&middot; All Time Favourite &middot;</p>
+        <div class="sub-container">
+            <div class="box">
+                <div class="images">
+                    <img src="img/samosa1.jfif" alt="">
+                    <p>Aloo Samosa</p>
+                </div>
+            </div>
+            <div class="box">
+             <div class="images">
+                 <img src="img/samosa1.jfif" alt="">
+                 <p>Paneer Samosa</p>
+             </div>
+            </div>
+            <div class="box">
+             <div class="images">
+                 <img src="img/samosa1.jfif" alt="">
+                 <p>Noodle Samosa</p>
+             </div>
+            </div>
+
+            <div class="box">
+             <div class="images">
+                 <img src="img/samosa2.jfif" alt="">
+                 <p>Chocolate Samosa</p>
+             </div>
+            </div>
+            <div class="box">
+             <div class="images">
+                 <img src="img/samosa2.jfif" alt="">
+                 <p>Khoya Samosa</p>
+             </div>
+            </div>
+            <div class="box">
+             <div class="images">
+                 <img src="img/samosa2.jfif" alt="">
+                 <p>Ragi Samosa</p>
+             </div>
+            </div>
+
+            <div class="box">
+                <div class="images">
+                    <img src="img/samosa3.jfif" alt="">
+                    <p>Keema Samosa</p>
+                </div>
+               </div>
+               <div class="box">
+                <div class="images">
+                    <img src="img/samosa3.jfif" alt="">
+                    <p>Egg Samosa</p>
+                </div>
+               </div>
+               <div class="box">
+                <div class="images">
+                    <img src="img/samosa3.jfif" alt="">
+                    <p>Soya Bean Samosa</p>
+                </div>
+               </div>
+        </div>
+    </section>
+
+    <footer class="fourth">
+        <p class="head">&middot; Contact Us &middot;</p>
+        <div class="container">
+                <form action="">
+                   <label for="">First Name:</label>
+                    <input type="text">
+                    <label for="">Last Name:</label>
+                    <input type="text">
+                    <label for="">Email:</label>
+                    <input type="email">
+                    <label for="">Feedback:</label>
+                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                </form>
+            <div class="contacts">
+                <p>WE'RE OPEN</p>
+                <p>All days:  8 am-9 pm</p>
+                <p>LOCATIONS</p>
+                <p>Bengaluru | Delhi NCR | Hyderabad</p>
+                <p>Help : help@hotandcrispysamosa.co.in </p>
+                <p>Contact: +91 8888888888</p>
+                <p>Follow US</p>
+                <p><a href=""><i class="bi bi-facebook"></i></a> 
+                    <a href=""><i class="bi bi-instagram"></i></a> 
+                    <a href=""><i class="bi bi-twitter"></i></a>
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
